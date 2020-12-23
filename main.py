@@ -29,7 +29,7 @@ def login(driver, username, password, failed=0):
     )
 
     print('门户登陆中...')
-    driver.find_element_by_id('user').send_keys(username) #user_name
+    driver.find_element_by_id('user_name').send_keys(username) #
     time.sleep(TIMESLP)
     driver.find_element_by_id('password').send_keys(password)
     time.sleep(TIMESLP)
