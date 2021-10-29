@@ -31,5 +31,5 @@ jobs:
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
       
       - run: |
-          pip install selenium
+          pip install selenium==2.48.0
           python main.py -u ${{ secrets.USERNAME }} -p ${{ secrets.PASSWORD }}
